@@ -1,0 +1,32 @@
+Quest 1
+python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+python pacman.py -l tinyMaze -p SearchAgent
+python pacman.py -l mediumMaze -p SearchAgent
+python pacman.py -l bigMaze -z .5 -p SearchAgent
+
+Quest 2
+python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+python eightpuzzle.py
+
+Quest 3
+python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+
+Quest 4
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+
+Quest 5
+python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem
+
+Quest 6
+python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+
+Quest 7
+python pacman.py -l testSearch -p AStarFoodSearchAgent
+python pacman.py -l trickySearch -p AStarFoodSearchAgent
+
+Quest 8
+python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5 
