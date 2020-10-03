@@ -184,8 +184,9 @@ def foodHeuristic(state, problem):
     if cost < 0:
         cost = 0
     return cost + foodCount
-    ```
-    Ý tưởng: Từ vị trí đang xét, ta tìm điểm có thức ăn xa nhất. Nếu điểm thức ăn xa nhất ở bên trên điểm đang xét , ta cộng khoảng cách xa nhất đó với số điểm có thức ăn ở dưới điểm đang xét và ngược lại. Trong trường hợp điểm xa nhất cùng hàng với điểm đang xét , ta cộng khoảng cách với tất cả các điểm có thức ăn nằm ngoài hàng đó.
+```
+ 
+Ý tưởng: Từ vị trí đang xét, ta tìm điểm có thức ăn xa nhất. Nếu điểm thức ăn xa nhất ở bên trên điểm đang xét , ta cộng khoảng cách xa nhất đó với số điểm có thức ăn ở dưới điểm đang xét và ngược lại. Trong trường hợp điểm xa nhất cùng hàng với điểm đang xét , ta cộng khoảng cách với tất cả các điểm có thức ăn nằm ngoài hàng đó.
     
     
 ## Question 8 (3 points): Suboptimal Search
